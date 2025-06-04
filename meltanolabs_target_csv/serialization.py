@@ -50,7 +50,7 @@ def write_batch(
 
         tmp_fp.seek(0)
 
-        with filepath.open("a") as f:
+        with filepath.open("a",encoding="utf-8", newline="") as f:
             f.write(tmp_fp.read())
 
 
